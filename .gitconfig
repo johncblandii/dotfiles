@@ -1,0 +1,20 @@
+[user]
+	name = John C. Bland II
+	email = something@here.com
+[mergetool]
+	keepBackup = false
+[alias]
+  c = commit -m
+  a = add
+  b = branch
+  aa = !git add -u && git add . && git status
+  co = checkout
+  cob = checkout -b
+  po = push origin
+  rup = !git fetch origin && git rebase origin/master
+  mup = !git fetch origin && git merge origin/master
+  ir = !git rebase -i origin/master
+  rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
+  who = shortlog -n -s --no-merges
+  lp = log --pretty=oneline
+  lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative

@@ -1,4 +1,4 @@
-dotfiles
+.files
 ========
 
 Dot files for OSX
