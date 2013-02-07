@@ -10,6 +10,7 @@
   aa = !git add -u && git add . && git status
   co = checkout
   cob = checkout -b
+  fo = fetch origin
   po = push origin
   rup = !git fetch origin && git rebase origin/master
   mup = !git fetch origin && git merge origin/master
