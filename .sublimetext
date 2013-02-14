@@ -1,0 +1,17 @@
+{
+  "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_size": 12.0,
+	"ignored_packages":
+	[
+		"Vintage",
+		"SublimeCodeIntel"
+	],
+	"rulers":
+	[
+		120
+	],
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": "auto",
+	"wrap_width": 120
+}
