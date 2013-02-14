@@ -1,0 +1,45 @@
+// SublimeLinter JSHint options for structured coding style
+{
+    "javascript_linter": "jshint",
+    "sublimelinter_mark_style": "none",
+    "sublimelinter_gutter_marks": true,
+    "sublimelinter_popup_errors_on_save": true,
+    "jshint_options":
+    {
+        // Predefined globals
+        "predef": [
+            "escape", "unescape",
+            // Require.js
+            "define", "require",
+            // Log4JS
+            "log4javascript",
+            // Jasmine
+            "jasmine", "afterEach", "beforeEach", "describe", "expect", "inject", "it", "spyOn"
+        ],
+        // Enforcing Options
+        "curly": false,
+        "eqeqeq": true,
+        "immed": true,
+        "indent": 4,
+        "latedef": true,
+        "newcap": true,
+        "noarg": true,
+        "nonew": true,
+        "quotmark": false,
+        "regexp": true,
+        "undef": true,
+        "unused": true,
+        "strict": false,
+        "trailing": true,
+        "maxlen": 120,
+        // Relaxing Options
+        "es5": true,
+        "esnext": true,
+        "evil": true,
+        // Environment Options
+        "browser": true,
+        "node": true,
+        // Use JSLint style-checking
+        "white": false
+    }
+}
