@@ -14,7 +14,7 @@
             // Log4JS
             "log4javascript",
             // Jasmine
-            "jasmine", "afterEach", "beforeEach", "describe", "expect", "inject", "it", "spyOn"
+            "jasmine", "afterEach", "beforeEach", "describe", "expect", "inject", "it", "spyOn", "waitsFor", "runs"
         ],
         // Enforcing Options
         "curly": false,
