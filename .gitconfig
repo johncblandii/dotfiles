@@ -12,7 +12,9 @@
   cob = checkout -b
   fo = fetch origin
   fpo = fetch origin --prune
-  po = push origin
+  puo = push origin
+  plo = pull origin
+  pap = pull --all --prune
   rup = !git fetch origin && git rebase origin/master
   mup = !git fetch origin && git merge origin/master
   ir = !git rebase -i origin/master
