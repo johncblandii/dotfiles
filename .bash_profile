@@ -22,3 +22,6 @@ PROMPT_COMMAND='PS1="\[\033[0;32m\]\w\[\033[0;32m\]\[\033[0;36m\]$(git_branch)\[
 
 #Git
 alias g='git'
+
+#Reset Pow
+alias powr="touch tmp/restart.txt"
