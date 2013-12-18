@@ -16,8 +16,31 @@ PROMPT_COMMAND='PS1="\[\033[0;32m\]\w\[\033[0;32m\]\[\033[0;36m\]$(git_branch)\[
 #Git
 alias g='git'
 
-#Reset Pow
-alias powr="touch tmp/restart.txt"
-
 #rbenv
 eval "$(rbenv init -)"
+
+#connection throttling
+throttle(){
+    sudo ipfw pipe 1 config bw $1KByte/s && sudo ipfw add 1 pipe 1 src-port $2
+}
+
+rmthrottle(){
+    sudo ipfw delete 1
+}
+
+#finder aliases
+alias ll="ls -lahG"
+alias irbs="irb --simple-prompt"
+
+#RAILS
+alias rake="bundle exec rake"
+alias bec="bundle exec cucumber"
+alias ber="bundle exec spec"
+alias powr="touch tmp/restart.txt"
+alias rdbm='rake db:migrate && rake db:test:prepare && rake db:seed'
+alias rdbreset="rake db:drop && rake db:migrate && rake db:test:prepare && rake db:seed"
+alias rspec='rake spec'
+alias tdl='tail -f ./log/development.log'
+alias ttl='tail -f ./log/test.log'
+
+alias work="cd ~/Work"
