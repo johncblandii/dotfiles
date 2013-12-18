@@ -1,11 +1,4 @@
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
+PATH=$PATH:~/bin
 
 # Prompt Customization
 git_branch() {
@@ -25,3 +18,6 @@ alias g='git'
 
 #Reset Pow
 alias powr="touch tmp/restart.txt"
+
+#rbenv
+eval "$(rbenv init -)"
