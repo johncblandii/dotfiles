@@ -39,7 +39,6 @@ alias ber="bundle exec spec"
 alias powr="touch tmp/restart.txt"
 alias rdbm='rake db:migrate && rake db:test:prepare && rake db:seed'
 alias rdbreset="rake db:drop && rake db:migrate && rake db:test:prepare && rake db:seed"
-alias rspec='rake spec'
 alias tdl='tail -f ./log/development.log'
 alias ttl='tail -f ./log/test.log'
 
